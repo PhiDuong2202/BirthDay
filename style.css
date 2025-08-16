@@ -14,9 +14,25 @@ img {
 
 
 h1 {
-  font-size: 300%;
+  font-size: 250%;
   text-align: center;
+  color: #fff;
+  background: linear-gradient(90deg, #ffb347 0%, #ffcc33 100%);
+  padding: 20px 0;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px #6d6d6d, 0 0 10px #fff;
+  margin: 40px auto 30px auto;
+  width: 60%;
+  border: 3px solid #fff176;
+  transition: transform 0.2s;
 }
+
+h1:hover {
+  transform: scale(1.03) rotate(-1deg);
+}
+
 body#a {
   align-items: center;
 }
@@ -52,4 +68,54 @@ h1.made {
   font-size: 200%;
   margin-bottom: 30px;
   color: #9eb6ff;
+}
+
+.corner-gif {
+  position: fixed;
+  bottom: 0;
+  width: 300px;
+  z-index: 100;
+}
+
+.left-gif {
+  left: 0;
+}
+
+.right-gif {
+  right: 0;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 5px;
+  }
+
+  h1 {
+    font-size: 150%;
+    padding: 12px 0;
+    width: 98%;
+    margin: 20px auto 18px auto;
+    border-radius: 12px;
+  }
+
+  img {
+    width: 90% !important;
+    border-radius: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #button {
+    width: 90%;
+    font-size: 18px;
+    padding: 12px 0;
+    border-radius: 10px;
+    margin-top: 18px;
+  }
+
+  .corner-gif {
+    width: 90vw;
+    max-width: 350px;
+    min-width: 120px;
+  }
 }
