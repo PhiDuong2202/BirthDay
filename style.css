@@ -2,14 +2,14 @@ body {
   background-image: url('https://i.pinimg.com/1200x/f5/2b/b2/f52bb2ceae14f6749f556ab46bf5236c.jpg'); ;
   background-size: cover;
 
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   justify-content: center;
   font-family: arial;
   margin: auto;
 }
 
 img {
-  width: 80vw;
+  width: 50vw;
   max-width: 450px;
   min-width: 120px;
   display: block;
@@ -19,7 +19,7 @@ img {
 
 
 h1 {
-  font-size: 250%;
+  font-size: 150%;
   text-align: center;
   color: #fff;
   background: linear-gradient(90deg, #ffb347 0%, #ffcc33 100%);
@@ -78,7 +78,7 @@ h1.made {
 .corner-gif {
   position: fixed;
   bottom: 0;
-  width: 80vw;     
+  width: 50vw;     
   max-width: 480px; 
   min-width: 120px; 
   z-index: 100;
@@ -111,4 +111,23 @@ h1.made {
   bottom: 0;
   width: 60vw;
   z-index: 100;
+}
+
+.gift-animate {
+  animation: bounce 1.2s infinite, shake 2s infinite;
+  transition: transform 0.2s;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0);}
+  50%  { transform: translateY(-20px);}
+  100% { transform: translateY(0);}
+}
+
+@keyframes shake {
+  0%, 100% { transform: rotate(0);}
+  20% { transform: rotate(-5deg);}
+  40% { transform: rotate(5deg);}
+  60% { transform: rotate(-5deg);}
+  80% { transform: rotate(5deg);}
 }
