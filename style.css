@@ -29,7 +29,8 @@ h1 {
   letter-spacing: 2px;
   text-shadow: 2px 2px 8px #6d6d6d, 0 0 10px #fff;
   margin: 40px auto 30px auto;
-  width: 60%;
+  width: 90%;
+  max-width: 600px;
   border: 3px solid #fff176;
   transition: transform 0.2s;
 }
@@ -45,7 +46,8 @@ body#a {
 
 #button {
   display: flex;
-  width: 30%;
+  width: 60%;
+  max-width: 300px;
   padding: 15px 25px;
   font-size: 24px;
   cursor: pointer;
@@ -95,7 +97,8 @@ h1.made {
 }
 
 .loi-chuc {
-  width: 60%;
+  width: 80%;
+  max-width: 800px;
   text-align: center;
   color: #fff;
   font-size: 22px;
